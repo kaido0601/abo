@@ -6,9 +6,9 @@
   --ink: #f2f0e8;
   --muted: #aba99f;
   --line: rgba(242, 240, 232, 0.14);
-  --accent: #f27a54;
-  --accent-2: #2eb8a6;
-  --accent-3: #e7c563;
+  --accent: #b94650;
+  --accent-2: #9da4aa;
+  --accent-3: #e4ba67;
   --shadow: rgba(0, 0, 0, 0.34);
 }
 
@@ -20,9 +20,9 @@
   --ink: #22231f;
   --muted: #67665f;
   --line: rgba(34, 35, 31, 0.14);
-  --accent: #c55135;
-  --accent-2: #167b72;
-  --accent-3: #a47a18;
+  --accent: #9f3039;
+  --accent-2: #59636b;
+  --accent-3: #966f18;
   --shadow: rgba(33, 27, 18, 0.12);
 }
 
@@ -81,15 +81,18 @@ a {
 
 .brand-mark {
   display: grid;
-  width: 3rem;
+  width: 3.25rem;
   aspect-ratio: 1;
   place-items: center;
+  overflow: hidden;
   border: 1px solid var(--line);
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #111;
-  font-size: 0.85rem;
-  font-weight: 900;
-  letter-spacing: 0;
+  background: #050505;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand-name {
@@ -204,6 +207,13 @@ main {
   border: 1px solid var(--line);
   object-fit: cover;
   box-shadow: 0 24px 70px var(--shadow);
+}
+
+.masthead .masthead-logo {
+  padding: clamp(0.75rem, 2vw, 1.25rem);
+  background: #050505;
+  object-fit: contain;
+  object-position: center;
 }
 
 .shell {
