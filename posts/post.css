@@ -1,0 +1,31 @@
+.post-page {
+  width: min(760px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(2rem, 7vw, 5rem) 0;
+}
+
+.post-body {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.2rem, 5vw, 2.4rem);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: 0 24px 70px var(--shadow);
+}
+
+.post-body h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 4.8rem);
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.post-body p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.post-body .lede {
+  color: var(--ink);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABO Log</title>
+    <meta
+      name="description"
+      content="ABO Log is a small blog for a Discord friends group: posts, recaps, links, and inside jokes."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="ABO Log home">
+        <span class="brand-mark">ABO</span>
+        <span class="brand-name">Log</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#feed">Feed</a>
+        <a href="#archive">Archive</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle color theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3v2.2M12 18.8V21M4.7 4.7l1.6 1.6M17.7 17.7l1.6 1.6M3 12h2.2M18.8 12H21M4.7 19.3l1.6-1.6M17.7 6.3l1.6-1.6"></path>
+          <circle cx="12" cy="12" r="4"></circle>
+        </svg>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="masthead" aria-labelledby="site-title">
+        <div class="masthead-copy">
+          <p class="kicker">Discord group blog</p>
+          <h1 id="site-title">ABO</h1>
+          <p>
+            A shared log for game nights, voice chat lore, photos, recaps,
+            plans, and whatever the group decides is worth saving.
+          </p>
+        </div>
+        <img src="assets/abo-masthead.png" alt="A warm illustrated desk scene with an online friend group on a laptop screen.">
+      </section>
+
+      <section class="shell" aria-label="ABO blog workspace">
+        <aside class="panel status-panel" aria-label="Group status">
+          <div>
+            <p class="eyebrow">Current status</p>
+            <h2>Low pressure, always on</h2>
+          </div>
+          <dl class="stats">
+            <div>
+              <dt>Members</dt>
+              <dd>Friends only</dd>
+            </div>
+            <div>
+              <dt>Next post</dt>
+              <dd>After the next good bit</dd>
+            </div>
+            <div>
+              <dt>Home base</dt>
+              <dd>Discord</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <section class="feed" id="feed" aria-labelledby="feed-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Latest</p>
+              <h2 id="feed-title">Posts</h2>
+            </div>
+            <div class="filters" role="list" aria-label="Filter posts">
+              <button class="filter-button active" type="button" data-filter="all">All</button>
+              <button class="filter-button" type="button" data-filter="recap">Recaps</button>
+              <button class="filter-button" type="button" data-filter="plans">Plans</button>
+              <button class="filter-button" type="button" data-filter="lore">Lore</button>
+            </div>
+          </div>
+
+          <article class="post-card featured" data-tags="recap lore">
+            <div class="post-meta">
+              <span>May 31, 2026</span>
+              <span>Recap</span>
+            </div>
+            <h3>ABO is officially logging the chaos</h3>
+            <p>
+              First post, clean slate. This spot can hold the best Discord
+              moments, screenshots, plans, quote collections, and the stories
+              that somehow keep getting referenced months later.
+            </p>
+            <a class="post-link" href="posts/abo-is-online.html">Read post</a>
+          </article>
+
+          <article class="post-card" data-tags="plans">
+            <div class="post-meta">
+              <span>Draft</span>
+              <span>Plans</span>
+            </div>
+            <h3>Movie night queue</h3>
+            <p>
+              A running list for picks, vetoes, snacks, and the one person who
+              says they are joining in five minutes and appears forty minutes later.
+            </p>
+            <a class="post-link" href="posts/movie-night-queue.html">Read post</a>
+          </article>
+
+          <article class="post-card" data-tags="lore recap">
+            <div class="post-meta">
+              <span>Draft</span>
+              <span>Lore</span>
+            </div>
+            <h3>The quote board needs a home</h3>
+            <p>
+              A permanent page for quotes that make no sense outside the server
+              and somehow make perfect sense to everybody inside it.
+            </p>
+            <a class="post-link" href="posts/quote-board.html">Read post</a>
+          </article>
+
+          <article class="post-card" data-tags="recap">
+            <div class="post-meta">
+              <span>Draft</span>
+              <span>Recap</span>
+            </div>
+            <h3>Game night scoreboard</h3>
+            <p>
+              Wins, losses, dramatic comebacks, suspicious strategies, and
+              other things that should probably be recorded before memory edits them.
+            </p>
+            <a class="post-link" href="posts/game-night-scoreboard.html">Read post</a>
+          </article>
+        </section>
+
+        <aside class="panel note-panel" id="archive" aria-labelledby="archive-title">
+          <p class="eyebrow">Archive</p>
+          <h2 id="archive-title">Starter buckets</h2>
+          <ul class="bucket-list">
+            <li>
+              <span>01</span>
+              <strong>Recaps</strong>
+              <small>game nights, calls, watch parties</small>
+            </li>
+            <li>
+              <span>02</span>
+              <strong>Lore</strong>
+              <small>quotes, names, long-running bits</small>
+            </li>
+            <li>
+              <span>03</span>
+              <strong>Plans</strong>
+              <small>events, polls, future ideas</small>
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="about-band" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">About ABO</p>
+          <h2 id="about-title">A private little corner for the group.</h2>
+        </div>
+        <p>
+          Replace this copy with whatever ABO stands for, who is in it, and how
+          public or private you want the site to feel. The structure is ready
+          for a simple OVHcloud static upload.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>ABO Log</span>
+      <span>Built for the group.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
